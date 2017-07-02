@@ -1,0 +1,33 @@
+@import '../../sass/_common.scss';
+
+.merchant-section {
+    margin: px2rem(10px) auto px2rem(20px);
+
+    @include title();
+
+    .item {
+        background-color: $white;
+        position: relative;
+        border-bottom: 1px solid $borderGrey;
+        padding: px2rem(10px);
+        color: $black1;
+    }
+
+    .company-name {
+        font-size: px2rem(18px);
+    }
+
+    .address, .telephone{
+        color: $fontGrey1;
+        font-size: px2rem(14px);
+    }
+
+    .icon-next-s {
+        font-size: px2rem(25px);
+        color: $green1;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: px2rem(10px);
+    }
+}

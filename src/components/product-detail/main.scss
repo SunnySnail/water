@@ -1,0 +1,51 @@
+@import '../../sass/_common.scss';
+
+.product-detail {
+    .pic {
+        margin-top: px2rem(-10px);
+        width: 100%;
+        height: px2rem(250px);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .product-info {
+        background-color: $white;
+        padding: px2rem(10px);
+        border-bottom: 1px solid $borderGrey1;
+    }
+
+    .p-name {
+        font-size: px2rem(18px);
+    }
+
+    .p-price {
+        font-size: px2rem(16px);
+        color: $green1;
+    }
+
+    .p-other {
+        font-size: px2rem(14px);
+        color: $grey2;
+        margin-top: px2rem(8px);
+    }
+
+    .product-intro {
+        background-color: $white;
+        padding: px2rem(10px);
+        margin-top: px2rem(10px);
+        margin-bottom: px2rem(60px);
+    }
+
+    .title {
+        font-size: px2rem(16px);
+        color: $grey2;
+    }
+
+    .intro {
+        font-size: px2rem(16px);
+        line-height: px2rem(30px);
+    }
+
+}

@@ -1,0 +1,27 @@
+@import '../../sass/_common.scss';
+
+.jump-bar {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    font-size: px2rem(16px);
+    border-bottom: 1px solid $borderGrey;
+    padding: px2rem(10px);
+
+    a {
+        display: flex;
+        align-items: center;
+        color: #000;
+        width: 100%;
+    }
+
+    .text-value {
+        display: block;
+        font-size: px2rem(16px);
+        flex: 1;
+    }
+
+    .icon-fa-angle-right {
+        color: $fontGrey3;
+    }
+}

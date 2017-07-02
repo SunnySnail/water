@@ -1,0 +1,72 @@
+@import '../../sass/_common.scss';
+
+.popup-win-wrap {
+    position: fixed;
+    z-index: $zIndex4;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+
+    .popup-win {
+        border-radius: 5px;
+        min-width: px2rem(300px);
+        background-color: $white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .win-title {
+        border-bottom: 1px solid $borderGrey;
+        padding: px2rem(10px) 0;
+        text-align: center;
+        color: $black1;
+        font-size: 14px;
+    }
+
+    .win-body {
+        text-align: center;
+        font-size: $black1;
+        font-size: px2rem(16px);
+        padding: px2rem(30px);
+        line-height: px2rem(25px);
+
+        span {
+            color: $green1;
+        }
+    }
+
+    .win-footer {
+        display: flex;
+        align-items: flex-end;
+        border-top: 1px solid $borderGrey;
+        height: px2rem(50px);
+        line-height: px2rem(50px);
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .cancel-btn {
+        color: $grey2;
+        border-right: 1px solid $borderGrey;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .sure-btn {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        color: $green1;
+    }
+}

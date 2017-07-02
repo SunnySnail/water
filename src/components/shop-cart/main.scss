@@ -1,0 +1,45 @@
+@import '../../sass/_common.scss';
+
+.close-account {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    position: fixed;
+    bottom: px2rem(65px);
+    background-color: $white;
+    align-items: center;
+    height: px2rem(40px);
+    font-size: px2rem(16px);
+
+    .total-price {
+        flex: 1;
+        margin-left: px2rem(10px);
+
+        i {
+            font-style: normal;
+            color: $red3;
+        }
+    }
+
+    .icon-iconfontweibiaoti20 {
+        font-size: px2rem(14px);
+        margin: 0 px2rem(4px) 0 px2rem(10px);
+        color: $fontGrey3;
+
+        &.selected {
+            color: $red3;
+        }
+
+    }
+
+    .close-account-btn {
+        font-size: px2rem(16px);
+        height: 100%;
+        width: px2rem(100px);
+        color: $white;
+        background-color: $red3;
+        text-align: center;
+        line-height: px2rem(40px);
+    }
+
+}

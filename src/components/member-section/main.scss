@@ -1,0 +1,73 @@
+@import '../../sass/_common.scss';
+
+.member-section {
+    margin-bottom: px2rem(30px);
+    .member {
+        display: flex;
+        align-items: center;
+        background-color: $white;
+        padding: px2rem(10px);
+        font-size: px2rem(16px);
+        border-bottom: 1px solid $borderGrey;
+    }
+
+    .avatar {
+        border-radius: px2rem(10px);
+        width: px2rem(40px);
+        height: px2rem(40px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        margin-right: px2rem(10px);
+    }
+
+    .username {
+        flex: 1;
+    }
+
+    .tag {
+        font-size: px2rem(12px);
+        background-color: $orange2;
+        color: $orange1;
+        padding: px2rem(5px);
+        border-radius: 5px;
+    }
+
+    .member-btn {
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: px2rem(10px);
+    }
+
+    .btn {
+        font-size: px2rem(14px);
+        padding: px2rem(5px) px2rem(10px);
+        margin-left: px2rem(10px);
+        border: 1px solid $borderGrey;
+        background-color: $green1;
+        color: $white;
+        border-radius: px2rem(10px);
+    }
+
+    .edit-con {
+        margin-left: px2rem(10px);
+
+        span {
+            color: $red3;
+            font-size: px2rem(25px);
+        }
+    }
+
+
+    .slide-left-enter-active {
+        transition: all .5s linear;
+    }
+    .slide-left-leave-active {
+        transition: all .5s linear;
+    }
+    .slide-left-enter, .slide-left-leave-to{
+        transform: translateX(20px);
+    }
+}

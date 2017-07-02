@@ -1,0 +1,22 @@
+@import '../../sass/_common.scss';
+
+.product-section {
+    margin: px2rem(10px) auto px2rem(20px);
+
+    @include title();
+
+    @include productItem();
+
+    .buy-btn {
+        border-radius: 5px;
+        position: absolute;
+        padding: px2rem(5px) px2rem(10px);
+        font-size: 12px;
+        color: $white;
+        background-color: $green1;
+        right: px2rem(10px);
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

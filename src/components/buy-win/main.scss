@@ -1,0 +1,118 @@
+@import '../../sass/_common.scss';
+
+.buy-win-wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: $zIndex4;
+}
+
+.buy-product-btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $green1;
+    color: $white;
+    text-align: center;
+    padding: px2rem(5px) 0;
+}
+
+.buy-win {
+
+    position: fixed;
+    width: 100%;
+    height: px2rem(200px);
+    bottom: 0;
+    background-color: $white;
+
+    .buy-product {
+        border-top: 1px solid $borderGrey1;
+        position: fixed;
+        background-color: $white;
+        bottom: 0;
+        width: 100%;
+    }
+
+    input {
+        font-size: px2rem(14px);
+        width: px2rem(60px);
+        border: 1px solid $borderGrey1;
+        padding: px2rem(5px) 0;
+        text-align: center;
+        border-radius: 5px;
+        -webkit-appearance: none;
+        outline: none;
+    }
+
+    .num {
+        display: flex;
+        position: relative;
+        padding: px2rem(10px);
+        font-size: px2rem(16px);
+        margin-top: px2rem(10px);
+
+        span {
+            margin-right: px2rem(10px);
+            color: $fontGrey4;
+        }
+    }
+
+    #minus, #add {
+        vertical-align: middle;
+        text-align: center;
+        line-height: px2rem(30px);
+        display: inline-block;
+        width: px2rem(30px);
+        height: px2rem(30px);
+        background-color: $bgGrey;
+        font-style: normal;
+        font-size: px2rem(16px);
+        border-radius: 5px;
+        margin: 0 px2rem(5px);
+
+        &.disabled {
+            color: $fontGrey3;
+        }
+    }
+
+    .total-price {
+        margin-top: px2rem(10px);
+        margin-left: px2rem(10px);
+        color: $fontGrey4;
+        font-size: px2rem(16px);
+        i{
+            color: $red;
+            font-style: normal;
+        }
+    }
+
+
+    .buy-btn {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        font-size: px2rem(16px);
+        text-align: center;
+
+
+        span {
+            flex: 1;
+            color: $white;
+        }
+
+        .buy {
+            padding: px2rem(10px) 0;
+            background-color: $green1;
+        }
+
+        .add-to-cart {
+            padding: px2rem(10px) 0;
+            background-color: $red3;
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+@import '../../sass/_common.scss';
+
+.next-step {
+    margin: px2rem(40px) auto;
+    font-size: px2rem(16px);
+    border-radius: 5px;
+    display: block;
+    color: $white;
+    width: px2rem(250px);
+    background-color: $green1;
+    text-align: center;
+    padding: px2rem(10px) 0;
+}

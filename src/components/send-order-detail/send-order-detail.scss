@@ -1,0 +1,134 @@
+@import '../../sass/_common.scss';
+
+.send-order-detail {
+
+    .order-detail-section {
+        background-color: $white;
+        padding: px2rem(10px);
+        margin-bottom: px2rem(10px);
+        font-size: px2rem(16px);
+    }
+
+
+    .order-status {
+        border-bottom: 1px solid $borderGrey;
+        padding-bottom: px2rem(10px);
+        display: flex;
+        font-size: 12px;
+    }
+
+    .order-num {
+        flex: 2;
+        color: $grey2;
+        i {
+            font-style: normal;
+        }
+    }
+
+    .send-status {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        color: $fontGrey1;
+
+        &.unsend {
+            font-weight: bold;
+            color: $red;
+        }
+    }
+
+    .order-user-info {
+        font-size: px2rem(16px);
+        color: $grey2;
+    }
+
+    .connect-info {
+        padding: px2rem(10px) 0;
+        display: flex;
+        align-items: center;
+        span:first-of-type {
+            flex: 2;
+
+        }
+        span:last-of-type {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+        }
+    }
+
+    .company-name {
+        font-size: px2rem(18px);
+        color: $black1;
+    }
+
+    .company-address, .connect-phone {
+        color: $grey2;
+        font-size: px2rem(14px);
+    }
+
+    @include productItem();
+
+    .product {
+        margin-top: px2rem(10px);
+        padding: px2rem(10px) 0;
+        border-top: 1px solid $borderGrey1;
+        border-bottom: 0;
+    }
+
+    .product-price {
+        margin-top: px2rem(10px);
+    }
+
+    li {
+        font-size: px2rem(16px);
+        display: flex;
+        padding: px2rem(10px);
+        background-color: $white;
+        border-bottom: 1px solid $borderGrey1;
+    }
+
+    .title, .desc {
+        flex: 1;
+    }
+
+    .title {
+        color: $grey2;
+    }
+    .desc {
+        display: flex;
+        justify-content: flex-end;
+
+        &.stress {
+            font-size: px2rem(18px);
+            color: $red;
+        }
+    }
+
+    .btn {
+        float: right;
+        font-size: px2rem(16px);
+    }
+
+    .cancel-btn, .tips-btn {
+        margin: px2rem(10px);
+        width: px2rem(120px);
+        text-align: center;
+        padding: px2rem(5px) 0;
+        border: 1px solid $grey4;
+        border-radius: 5px;
+        color: $fontGrey1;
+    }
+
+    .confirm-btn {
+        margin: px2rem(10px);
+        width: px2rem(120px);
+        text-align: center;
+        padding: px2rem(5px) 0;
+        border-radius: 5px;
+        color: $white;
+        background-color: $green1;
+    }
+
+
+}

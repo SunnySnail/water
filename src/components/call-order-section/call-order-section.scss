@@ -1,0 +1,82 @@
+@import '../../sass/_common.scss';
+
+.call-order-section {
+    margin-bottom: px2rem(10px);
+    padding: px2rem(10px);
+    background-color: $white;
+    border-top: 1px solid $borderGrey;
+    border-bottom: 1px solid $borderGrey;
+
+    .call-order-status {
+        padding-bottom: px2rem(10px);
+        display: flex;
+        font-size: 12px;
+    }
+
+    .order-num {
+        flex: 2;
+        color: $grey2;
+        i {
+            font-style: normal;
+        }
+    }
+
+    .send-status {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        color: $fontGrey1;
+
+        &.unsend {
+            font-weight: bold;
+            color: $red;
+        }
+    }
+
+    @include productItem();
+
+    .product {
+        border-top: 1px solid $borderGrey1;
+    }
+
+    .product-num {
+        margin-top: px2rem(10px);
+        display: flex;
+        font-size: px2rem(14px);
+    }
+
+    .total-price {
+        display: flex;
+        align-items: center;
+        font-size: px2rem(16px);
+    }
+
+    .buy-date {
+        padding-top: px2rem(10px);
+        font-size: px2rem(12px);
+        display: flex;
+        color: $fontGrey1;
+    }
+
+    .date {
+        display:flex;
+        align-items: center;
+        flex: 1;
+    }
+
+    .btn {
+        display: flex;
+        justify-content: flex-end;
+        padding: px2rem(5px) px2rem(10px);
+        border-radius: 5px;
+    }
+
+    .confirm-btn {
+        background-color: $green1;
+        color: $white;
+    }
+
+    .cancel-btn, .tips-btn {
+        border: 1px solid $borderGrey;
+    }
+}

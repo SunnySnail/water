@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="wap-font-scale" content="no">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <title>咕噜送水</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_emv505fnn73f2yb9.css">
+    <link rel="stylesheet" href="//tx.cdn.water.icampus.us/water/css/reset.css">
+    <script>
+        function fixFontSize() {
+            document.getElementsByTagName('html')[0].style.fontSize = window.innerWidth * (20 / 375) + 'px';
+        }
+        document.addEventListener('DOMContentLoaded', function(e){
+            fixFontSize();
+        }, false)
+    </script>
+</head>
+<body>
+    <div id="app">
+        <router-view class="view"></router-view>
+    </div>
+    <script type="text/javascript" src="//tx.cdn.water.icampus.us/water/js/jquery.min.js"></script>
+    <script type="text/javascript" src="//tx.cdn.water.icampus.us/water/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="//tx.cdn.water.icampus.us/water/js/dexie.min.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</body>
+
+</html>

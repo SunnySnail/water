@@ -1,0 +1,23 @@
+@import '../../sass/_common.scss';
+.select-bar {
+    background-color: $white;
+    height: px2rem(60px);
+    display: flex;
+    align-items: center;
+    font-size: px2rem(16px);
+    border-top: 1px solid $borderGrey;
+    border-bottom: 1px solid $borderGrey;
+    padding: 0 px2rem(10px);
+    align-items: center;
+    margin-top: px2rem(5px);
+
+    .select-value {
+        display: block;
+        font-size: px2rem(16px);
+        flex: 1;
+    }
+
+    .icon-fa-angle-right {
+        color: $fontGrey3;
+    }
+}

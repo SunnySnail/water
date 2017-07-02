@@ -1,0 +1,40 @@
+
+@import '../../sass/_common.scss';
+
+.select-zone {
+    background-color: $white;
+    height: px2rem(60px);
+    display: flex;
+    align-items: center;
+    font-size: px2rem(16px);
+    border-top: 1px solid $borderGrey;
+    border-bottom: 1px solid $borderGrey;
+    padding: 0 px2rem(10px);
+
+    .level-name {
+        font-size: px2rem(16px);
+        line-height: px2rem(46px);
+        height: px2rem(46px);
+        flex: 1;
+        border: none;
+        outline: none;
+    }
+
+    .icon-fa-angle-right {
+        color: $fontGrey3;
+    }
+}
+
+.input-detail {
+    font-size: px2rem(15px);
+    border: none;
+    padding: px2rem(10px);
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: px2rem(100px);
+}
+
+.confirm-btn {
+    @include button();
+}

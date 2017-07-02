@@ -1,0 +1,37 @@
+@import '../../sass/_common.scss';
+
+.show-bar {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    font-size: px2rem(16px);
+    border-top: 1px solid $borderGrey;
+    border-bottom: 1px solid $borderGrey;
+    padding: px2rem(10px);
+    margin-top: px2rem(5px);
+
+    .text-key {
+        display: block;
+    }
+
+    .text-value {
+        display: block;
+        font-size: px2rem(16px);
+        flex: 1;
+        text-align: right;
+    }
+
+    .pic {
+        border-radius: px2rem(10px);
+        display: block;
+        width: px2rem(60px);
+        height: px2rem(60px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .icon-fa-angle-right {
+        color: $fontGrey3;
+    }
+}

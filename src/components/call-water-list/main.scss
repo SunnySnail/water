@@ -1,0 +1,17 @@
+@import '../../sass/_common.scss';
+
+.call-water-list {
+    @include title();
+
+    @include productItem();
+
+    .num {
+        font-size: px2rem(14px);
+        margin-top: px2rem(4px);
+        color: $green1;
+
+        span {
+            color: $black1;
+        }
+    }
+}

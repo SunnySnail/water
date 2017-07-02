@@ -1,0 +1,34 @@
+@import '../../sass/_common.scss';
+
+.user-section {
+
+    font-size: px2rem(16px);
+    background-color: $white;
+    padding: px2rem(15px);
+    margin: px2rem(15px) 0;
+
+    a {
+        display: flex;
+        align-items: center;
+        color: $black1;
+        width: 100%;
+    }
+
+    .avatar {
+        border: 1px solid $grey4;
+        width: px2rem(60px);
+        height: px2rem(60px);
+        border-radius: px2rem(10px);
+        @extend %avatar;
+        margin-right: px2rem(15px);
+    }
+
+    .user-info {
+        flex: 1;
+        line-height: px2rem(25px);
+    }
+
+    .icon-fa-angle-right {
+        color: $grey4;
+    }
+}

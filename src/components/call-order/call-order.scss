@@ -1,0 +1,100 @@
+@import '../../sass/_common.scss';
+
+.call-order {
+    margin-top: px2rem(-10px);
+    .product-pic {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: px2rem(200px);
+    }
+
+    .product-info {
+        padding: px2rem(10px);
+        background-color: $white;
+        font-size: px2rem(16px);
+    }
+
+    .product-intro {
+        font-size: px2rem(14px);
+        color: $grey2;
+    }
+
+    .send-info {
+        margin-top: px2rem(10px);
+        .title {
+            padding: px2rem(10px);
+            font-size: px2rem(16px);
+        }
+    }
+
+    .fill-order {
+        background-color: $white;
+        padding: px2rem(10px);
+        font-size: px2rem(14px);
+    }
+
+    .water-num {
+        display: flex;
+    }
+
+    .total-num , .left-num{
+        margin-right: px2rem(20px);
+
+        i {
+            color: $green1;
+        }
+    }
+
+    .order-num {
+        margin: px2rem(15px) 0;
+        font-size: px2rem(16px);
+    }
+
+    input {
+        font-size: px2rem(14px);
+        width: px2rem(60px);
+        border: 1px solid $borderGrey1;
+        padding: px2rem(5px) 0;
+        text-align: center;
+        border-radius: 5px;
+        -webkit-appearance: none;
+        outline: none;
+    }
+
+    #minus, #add {
+        vertical-align: middle;
+        text-align: center;
+        line-height: px2rem(30px);
+        display: inline-block;
+        width: px2rem(30px);
+        height: px2rem(30px);
+        background-color: $bgGrey;
+        font-style: normal;
+        font-size: px2rem(16px);
+        border-radius: 5px;
+        margin: 0 px2rem(5px);
+
+        &.disabled {
+            color: $fontGrey3;
+        }
+    }
+
+    .send-address {
+        span {
+            color: $green1;
+        }
+    }
+
+    .submit-order {
+        width: px2rem(200px);
+        padding: px2rem(5px);
+        color: $white;
+        text-align: center;
+        margin: px2rem(20px) auto;
+        background-color: $green1;
+        font-size: px2rem(16px);
+        border-radius: 8px;
+    }
+}

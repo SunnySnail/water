@@ -1,0 +1,62 @@
+@import '../../sass/_common.scss';
+
+.invitation-letter {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $white;
+
+    .invite-con {
+        text-align: center;
+        @include middle();
+    }
+
+    .invite-btn {
+        @extend %btn;
+        width: px2rem(200px);
+        padding: px2rem(20px) 0;
+    }
+
+    .invitation-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: $wrap;
+        z-index: $zIndex5;
+        color: $white;
+
+        .wrap-con {
+            position: absolute;
+            right: px2rem(40px);
+            top: px2rem(10px);
+            text-align: right;
+
+            p {
+                font-weight: bold;
+                font-size: px2rem(12px);
+                width: px2rem(150px);
+                text-align: left;
+            }
+        }
+
+        .close-btn {
+            width: px2rem(100px);
+            padding: px2rem(5px) 0;
+            text-align: center;
+            margin: px2rem(10px) auto;
+            border: 1px solid $white;
+            border-radius: px2rem(10px);
+            font-size: px2rem(12px);
+
+        }
+
+        img {
+            width: px2rem(20px);
+        }
+    }
+}

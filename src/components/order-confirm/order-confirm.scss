@@ -1,0 +1,74 @@
+@import '../../sass/_common.scss';
+
+.order-confirm {
+    .address {
+        background-color: $white;
+        padding: px2rem(10px);
+        font-size: px2rem(16px);
+    }
+
+    .a-title {
+        color: $fontGrey1;
+    }
+
+    .icon-site-copy {
+        color: $green1;
+        margin-right: px2rem(10px);
+    }
+
+    p {
+        line-height: px2rem(30px);
+    }
+
+    .product {
+        display: flex;
+        padding: px2rem(10px);
+        margin: px2rem(10px) 0;
+        background-color: $white;
+    }
+
+    @include productItem();
+
+    .info {
+        font-size: px2rem(16px);
+    }
+
+    li {
+        font-size: px2rem(16px);
+        display: flex;
+        padding: px2rem(10px);
+        background-color: $white;
+        border-bottom: 1px solid $borderGrey1;
+    }
+
+    .title, .desc {
+        flex: 1;
+    }
+
+    .title {
+        color: $grey2;
+    }
+    .desc {
+        display: flex;
+        justify-content: flex-end;
+
+        &.stress {
+            font-size: px2rem(18px);
+            color: $red;
+        }
+    }
+    .pay-btn {
+        text-align: center;
+        background-color: $green1;
+        color: $white;
+        padding: px2rem(10px);
+        width: px2rem(200px);
+        margin: px2rem(40px) auto;
+        font-size: px2rem(16px);
+        border-radius: 10px;
+
+        &:active {
+            background-color: $green;
+        }
+    }
+}

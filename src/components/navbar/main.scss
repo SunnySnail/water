@@ -1,0 +1,32 @@
+@import '../../sass/_common.scss';
+header {
+    top: 0;
+    z-index: $zIndex3;
+    position: fixed;
+    width: 100%;
+    height: px2rem(40px);
+    background-color: $green1;
+    color: $white;
+    line-height: px2rem(40px);
+    padding: 0 px2rem(10px);
+    box-sizing: border-box;
+    border-bottom: 1px solid $borderGrey2;
+
+    a {
+        position: absolute;
+        font-size: px2rem(12px);
+        color: $white;
+    }
+
+    p {
+        font-size: px2rem(16px);
+        text-align: center;
+
+    }
+
+    .icon-back {
+        font-size: px2rem(25px);
+        vertical-align: middle;
+    }
+}
+

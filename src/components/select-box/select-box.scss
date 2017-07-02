@@ -1,0 +1,103 @@
+@import '../../sass/_common.scss';
+.select-box {
+    .select-box-con {
+        width: px2rem(300px);
+        margin: px2rem(20px) auto;
+        font-size: px2rem(14px);
+        display: flex;
+    }
+
+    .input-title {
+        font-weight: bold;
+        line-height: px2rem(40px);
+        flex: 1;
+        text-align: center;
+    }
+
+    .select-input {
+        background-color: $white;
+        font-size: 14px;
+        position: relative;
+        width: px2rem(150px);
+        height: px2rem(40px);
+        border: 1px solid $borderGrey;
+        border-radius: 5px;
+        flex: 2.5;
+        line-height: px2rem(40px);
+        padding-left: px2rem(10px);
+        color: $grey2;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            right: px2rem(10px);
+            display: block;
+            content:' ';
+            border: 5px solid $green1;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+        }
+    }
+
+    .select-win-wrap {
+        z-index: $zIndex3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        opacity: 1;
+    }
+
+    .select-win {
+        z-index: $zIndex3;
+        transform: translateY(0);
+        overflow: scroll;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: px2rem(200px);
+        background-color: $white;
+    }
+
+    .icon-duigou {
+        display: none;
+        font-size: px2rem(18px);
+        position: absolute;
+        left: px2rem(60px);
+    }
+
+    .select-item {
+        position: relative;
+        text-align: center;
+        color: $fontGrey1;
+        font-size: px2rem(16px);
+        padding: px2rem(10px);
+        &.active {
+            font-weight: bold;
+            color: $green1;
+
+            .icon-duigou {
+                display: block;
+            }
+        }
+    }
+
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
+
+    .fade-enter, .fade-leave-active {
+        opacity: 0;
+    }
+
+    .slide-enter-active, .slide-leave-active {
+        transition: transform .5s;
+    }
+
+    .slide-enter, .slide-leave-active {
+        transform: translateY(100%);
+    }
+}
